@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
-int main() //11
+int main() //111
 {
     char text[1000];
     printf("%i", sizeof(text));
