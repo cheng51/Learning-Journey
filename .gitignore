@@ -416,3 +416,17 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# 忽略 Windows 的可执行文件
+*.exe
+*.msi
+
+# 忽略 Linux/Mac 的构建产物
+*.out
+*.app
+bin/
+obj/
+
+# 忽略 Python 编译文件
+__pycache__/
+*.pyc
