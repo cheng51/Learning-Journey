@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+long long fac(int n);
+
+int main()
+{
+    int n, r;
+    printf("n,r: ");
+    if (scanf("%d,%d", &n, &r) != 2) {
+        return 1;
+    }
+
+    if (n <= 0 || r <= 0 || n < r) 
+    {
+        return 0; 
+    }
+
+    long long result = fac(n) / (fac(r) * fac(n - r));
+    
+    printf("%lld\n", result);
+    return 0;
+}
+
+long long fac(int n)
+{
+
+    if (n <= 1)
+        return 1;
+    return n * fac(n - 1);
+}
